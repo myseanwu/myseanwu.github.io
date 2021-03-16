@@ -80,6 +80,7 @@ header{
     align-content: center;
     margin-right: 1em; 
     width: 15%;
+    height: auto;
 }
 
 .nav-wrapper > .left-side > div{
@@ -124,11 +125,13 @@ header{
 
 
 .right-side-img>img{
-    /* display: flex; */
+    display: block;
     /* justify-content: flex-end; */
     width: 100%;
     height: auto;
-    clip-path: circle(40% at center);
+    /* clip-path: circle(40% at center); */
+    border-radius: 50%;
+    position: relative;
 }
 
 
