@@ -122,10 +122,10 @@ header{
 
 
 
-.right-side-img img{
+.right-side-img>img{
     /* display: flex; */
     /* justify-content: flex-end; */
-    width: 50%;
+    width: 100%;
     height: auto;
     clip-path: circle(40% at center);
 }
