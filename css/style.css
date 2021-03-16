@@ -36,7 +36,7 @@ header{
     display: flex;
     flex-direction: column;
     flex: 1;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     flex-basis:100%;
 }
@@ -52,13 +52,12 @@ header{
     justify-content: space-between;
     /* padding: 38px; */
     align-items: center;
-    justify-content: space-between;
+    
     width: auto;
-
+    
     /* position: sticky;
     top: 0; */
-    
-    
+
     /* background-color:lightcyan; */
     padding-top: 5%;
     padding-bottom: 5%;
@@ -78,12 +77,15 @@ header{
     display:flex;
     justify-content: flex-end;
     align-content: center;
-    margin-right: 1em; 
-    max-width: 100%;
+    margin-left: 1em; 
+    /* max-width: 68px;
+    max-height: 68px; */
+    
 }
 
 .nav-wrapper > .left-side > div{
     margin-left: 1em;  /*20pc*/
+    margin-right: 1em;
     font-size: 0.9em;
     text-transform: uppercase;
 }
@@ -107,14 +109,21 @@ header{
 }
 .active-nav-link{
     border-bottom: 2px solid black;
+    position: relative;
 }
 .active-nav-link a{
     color: black !important;
     font-size: 1.1em;
+    
 }
 .active-nav-link::after{
     color: black !important;
     content: "🎯";
+    position: absolute;
+    top: 1.1em;
+    bottom: 1em;
+    left: 0px;
+    right: 0px;
 }
 
 .name-for-large{
@@ -125,8 +134,10 @@ header{
 
 .right-side-img>img{
     display: block;
-    /* justify-content: flex-end; */
-    max-width: 10%;
+    
+    /* align-self: center; */
+    max-height: 68px;
+    /* margin-right: 2em; */
     /* clip-path: circle(40% at center); */
     border-radius: 50%;
     position: relative;
