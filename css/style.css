@@ -20,7 +20,7 @@
 
 body{
     margin: 0px;
-    font-family: "lato",sans-serif;
+    font-family: "Lato",sans-serif;
 }
 /* .container{
     display: grid;
@@ -49,23 +49,21 @@ header{
 .nav-wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
     /* padding: 38px; */
     align-items: center;
-    
-    width: auto;
-    
-    /* position: sticky;
-    top: 0; */
 
     /* background-color:lightcyan; */
     padding-top: 5%;
     padding-bottom: 5%;
 
     /* width include padding  and margin */
-    box-sizing: border-box; 
-    /* always on the top */
+    box-sizing: border-box;
+    width: 100%;
+    /* always on the top layer*/
     z-index: 1; 
+    flex-basis:100%;
 
 }
 .left-side{
@@ -73,6 +71,10 @@ header{
     justify-content: flex-start;
     align-content: center;
     font-size: 1.2em;
+
+    box-sizing: border-box;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
 
 .right-side-img{
@@ -82,12 +84,25 @@ header{
     margin-left: 1em; 
     /* max-width: 68px;
     max-height: 68px; */
+    box-sizing: border-box;
+    width: 10%;
     
+}
+
+
+.right-side-img>img{
+    display: flex;
+    
+    /* align-self: center; */
+    max-height: 68px;
+    border-radius: 50%;
+    position: relative;
 }
 
 .nav-wrapper > .left-side > div{
     margin-left: 1em;  /*20pc*/
     margin-right: 1em;
+    margin-bottom: 1em;
     font-size: 0.9em;
     text-transform: uppercase;
 }
@@ -134,16 +149,6 @@ header{
 
 
 
-.right-side-img>img{
-    display: block;
-    
-    /* align-self: center; */
-    max-height: 68px;
-    /* margin-right: 2em; */
-    /* clip-path: circle(40% at center); */
-    border-radius: 50%;
-    position: relative;
-}
 
 
 /* main figure */
