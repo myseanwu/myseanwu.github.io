@@ -79,6 +79,7 @@ header{
     justify-content: flex-end;
     align-content: center;
     margin-right: 1em; 
+    width: 15%;
 }
 
 .nav-wrapper > .left-side > div{
