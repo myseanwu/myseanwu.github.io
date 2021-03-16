@@ -80,7 +80,7 @@ header{
     align-content: center;
     margin-right: 1em; 
     width: 15%;
-    height: auto;
+    height: 15%;
 }
 
 .nav-wrapper > .left-side > div{
@@ -128,7 +128,7 @@ header{
     display: block;
     /* justify-content: flex-end; */
     width: 100%;
-    height: auto;
+    height: 100%;
     /* clip-path: circle(40% at center); */
     border-radius: 50%;
     position: relative;
