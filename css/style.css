@@ -85,7 +85,7 @@ header{
     /* max-width: 68px;
     max-height: 68px; */
     box-sizing: border-box;
-    width: 10%;
+    width: 13%;
     
 }
 
@@ -94,14 +94,14 @@ header{
     display: flex;
     
     /* align-self: center; */
-    max-height: 68px;
+    max-height: 65px;
     border-radius: 50%;
     position: relative;
 }
 
 .nav-wrapper > .left-side > div{
-    margin-left: 1em;  /*20pc*/
-    margin-right: 1em;
+    margin-left: 0.5em;  /*20pc*/
+    margin-right: 0.5em;
     margin-bottom: 1em;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -161,7 +161,6 @@ header{
     /* position: absolute; */
     /* display: block; */
     width: 100%;
- 
 
     /* object-fit: cover; */
     opacity: 50%;
