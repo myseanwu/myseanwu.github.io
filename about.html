@@ -12,9 +12,13 @@
     <title>About 💪 </title>
 </head>
 <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    
     <header>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <div class="main-figure">
+        <img src="images/main-figure/bobby-tal-ycvg0KnNjBI-unsplash.jpg" alt="boat">
+    </div>
+    <h1>About Me</h1>
+    </header>
     <!-- <div class="container"> -->
         <nav class="nav-wrapper">
             <div class="left-side">
@@ -45,19 +49,26 @@
             </div>
 
         </nav>
-        
-        <div class="main-figure">
-            <img src="images/main-figure/bobby-tal-ycvg0KnNjBI-unsplash.jpg" alt="boat">
-        </div>
-        <h1>About Me</h1>
-    </header>
 
     <main  id="main">
+        <p class="article">
+            I've been working on Apple Projects for many years before coming UM. 
+            As an engineering project manager focused on hardware testing previously, I’ve learned hardware and software knowledge on the job from engineers and co-workers. 
+            In my workplace, I’m exposed to IT infrastructure, including database, data networking and software development environments. 
+            In form factor manufacturing, it’s important to manage the communication of system configurations and calibration keys among devices, production stations and database systems. 
+        </p>
+        <p class="article">
+            While now I'm pursuing the knowledge under the field of data science.
+            In school of Information, I would like to take my data analytic skill to the next level. 
+            When build my own products in the long-term of my future goal, 
+            these experiences will help me gather available resources and define processes and analyze data in a much logical manner.
+        </p>
+        <p class="article">
+            For 10 years, I’ve run in the morning and participated in marathons using my iPhone and Apple watch to record my performance and routes. 
+            Apple watches are 97% accurate in detecting abnormal heart rhythms, and data gained from devices can change lives, like 50-year old Scott Killian, whose watch recorded a heart rate of 121 bmp while sleeping, prompting a hospital visit.
+        </p>
+
         <div class="content-wrapper">
-            <div class="article">
-                For 10 years, I’ve run in the morning and participated in marathons using my iPhone and Apple watch to record my performance and routes. 
-                Apple watches are 97% accurate in detecting abnormal heart rhythms, and data gained from devices can change lives, like 50-year old Scott Killian, whose watch recorded a heart rate of 121 bmp while sleeping, prompting a hospital visit.
-            </div>
                 <div class="article-image">
                     <img  src="images/about/kyle-kranz-fH7gyo2QfGA-unsplash.jpg" alt="running">
                     <!-- <span>Photo by <a href="https://unsplash.com/@kjkranz?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kyle Kranz</a> on <a href="https://unsplash.com/collections/438072/running?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
@@ -65,20 +76,7 @@
                         <div class="text">Running</div>
                     </div>
                 </div>
-            <div class="article">
-                <p>
-                I've been working on Apple Projects for many years before coming UM. 
-                As an engineering project manager focused on hardware testing previously, I’ve learned hardware and software knowledge on the job from engineers and co-workers. 
-                In my workplace, I’m exposed to IT infrastructure, including database, data networking and software development environments. 
-                In form factor manufacturing, it’s important to manage the communication of system configurations and calibration keys among devices, production stations and database systems. 
-            </p>
-            <p>
-                While now I'm pursuing the knowledge under the field of data science.
-                In school of Information, I would like to take my data analytic skill to the next level. 
-                When build my own products in the long-term of my future goal, 
-                these experiences will help me gather available resources and define processes and analyze data in a much logical manner.
-            </p>
-            </div>
+            
             <div class="article-image">
                 <img  src="images/about/daniel-korpai-QhF3YGsDrYk-unsplash.jpg" alt="Apple Watch">
                 <!-- <span>Photo by <a href="https://unsplash.com/@danielkorpai?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel Korpai</a> on <a href="https://unsplash.com/s/photos/apple-watch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
@@ -88,6 +86,26 @@
             </div>
             
         </div>
+
+        <!-- form -->
+        
+        <form class="form-div" action="https://formspree.io/f/xvodooov" method="POST">
+            <fieldset>
+                <legend>Contact</legend>
+                <div class="form-container">
+                    <label for="input-name" id="name">Your Name</label>
+                    <input type="text" id="input-name" placeholder="Name">
+                    <label for="input-email" id="email" >Your Email</label>
+                    <input type="email" id="input-email" placeholder="Email address">
+                    <label for="input-subject" id="subject">Leave A Message</label>
+                    <input type="text" id="input-subject" placeholder="Subject">
+                    <label for="input-message" id="msg">Leave A Message</label>
+                    <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                    <input type="submit" value="Submit" id="input-submit">
+                </div>  
+            </fieldset>
+        </form>
+        
     </main>
     
 
@@ -104,7 +122,7 @@
         
             </div>
         <p>University of Michigan School of Information <br/>
-        &copy; Sean Hsin-Yuan Wu - Web Design 2020-2021</p>
+        &copy; Sean Hsin-Yuan Wu | Web Design 2020-2021</p>
     </footer>
 </body>
 </html>
