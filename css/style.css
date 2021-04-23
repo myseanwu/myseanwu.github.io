@@ -47,20 +47,14 @@ header>h1, h2{
 
 }
 
-/* header>nav,header>div,header>h1{
-    margin: 1em;
-} */
 
 /* nav style */
 .nav-wrapper{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
-    /* padding: 38px; */
     align-items: center;
 
-    /* background-color:lightcyan; */
     padding-top: 5%;
     padding-bottom: 5%;
 
@@ -88,18 +82,13 @@ header>h1, h2{
     justify-content: flex-end;
     align-content: center;
     margin-left: 1em; 
-    /* max-width: 68px;
-    max-height: 68px; */
     box-sizing: border-box;
     width: 13%;
-    
 }
 
 
 .right-side-img>img{
     display: flex;
-    
-    /* align-self: center; */
     max-height: 65px;
     border-radius: 50%;
     position: relative;
@@ -137,7 +126,6 @@ header>h1, h2{
 .active-nav-link a{
     color: black !important;
     font-size: 1.1em;
-    
 }
 .active-nav-link::after{
     color: black !important;
@@ -177,10 +165,8 @@ figcaption >p{
 
 /* main figure */
 .main-figure{
-    /* position: relative; */
     width: 100%;
     height: 100%;
-    /* margin-top: 5em; */
 }
 .main-figure>img{
     position: relative;
@@ -201,7 +187,6 @@ footer {
 
 }
 footer>* {
-    /* justify-content: center; */
     align-self: center;
 }
 
@@ -228,40 +213,15 @@ footer>* {
 .content-wrapper{
     display:grid;
     grid-template-columns: 1fr;
-
-    /* grid-column-gap: 32px; */
-    
-    /* border: 1px solid transparent; */
-    /* border-top: 1px solid #DADCE0; */
-    /* border-bottom: 1px solid #DADCE0; */
-
-    
 }
 
 main > p {
     padding: 1em;
-
 }
 
 .content-wrapper>figure{
-    
-    /* display: grid;
-    grid-column: 2/ span 2;  */
-    /* padding:1em; */
     padding: 1em;
-    /* padding-top: 1em;
-    padding-bottom: 1em; */
 }
-/* .content-wrapper:nth-child(odd){
-    display: grid;
-    grid-column: 3/ span 1; 
-}
-.content-wrapper:nth-child(even){
-    display: grid;
-    
-} */
-
-
 
 .content-wrapper>figure>img, .content-wrapper>div>img{
     width: 100%; 
@@ -271,10 +231,6 @@ main > p {
 /* Music */
 figure:hover {
     transform:scale(0.95);
-    -webkit-transform:;
-    -moz-transform:;
-    -ms-transform:;
-    -o-transform:;
     box-shadow: 10px 10px 5px #d3d3d3;
 }
 figure>img:hover {
@@ -285,11 +241,10 @@ figure>img:hover {
 /* boarder reference: https://juejin.cn/post/6861501624993447950 */
 figure {
     position: relative;
-    /* outline: none; */
     padding: 0% 2%;
     box-sizing: border-box;
   }
-  
+
 figure::before, figure::after {
     box-sizing: inherit;
     position: absolute;
@@ -298,7 +253,7 @@ figure::before, figure::after {
     width: 0;
     height: 0;
   }
-  
+
 figure::after {
     bottom: 0;
     right: 0;
@@ -390,7 +345,6 @@ figure:hover::after {
 .form-div{
     box-sizing: border-box;
     background: blanchedalmond;
-    /* font-family: sans-serif; */
     padding: 1em;
     width: 90%;
     border-radius: 8px;
@@ -404,18 +358,12 @@ form {
     max-width: 100%;
     text-align: center;
     margin: 1em auto;
-    /* display: flex;
-    flex-direction: column; */
 }
-fieldset{
-    /* text-align: center; */
-}
+
 legend {
     margin: 1em auto;
     font-size: 1.2em;
-    /* text-align: center; */
     color: black;
-    
  }
 .form-container{
     display: grid;
@@ -456,7 +404,7 @@ input, textarea{
     width: 95%;
     justify-self: center;
     margin-top: 1em;
-    /* resize: none; */
+
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
@@ -471,14 +419,9 @@ input, textarea{
     width: 97.5%;
 }
 
-/* about - parallax scrolling */
-/* header .main-figure>img{
-    display:none;
-} */
 
 /* Parallax CSS - reference https://codepen.io/alexoneal/pen/OBqaoe */
 .background-oregon-grapes {
-    /* background-image: url("http://aeoneal.com/imagery/blog/oregon-grapes.jpg"); */
     background-image: url("../images/about/daniel-korpai-QhF3YGsDrYk-unsplash.jpg");
 
     background-size: 100%;
@@ -508,8 +451,6 @@ input, textarea{
     background-attachment: scroll;
 }
 }
-
-
 /* parallax END */
 
 /* flip */
@@ -520,19 +461,7 @@ flex-wrap: wrap;
 justify-content: center;
 }
 
-
-
-
 /* flip end */
-
-/* no animation */
-/* @media screen and (prefers-reduced-motion: reduce) {
-.main-figure>img {
-    animation-name: none;
-    -webkit-animation-name: none;
-}
-
-} */
 
 
 
@@ -594,14 +523,6 @@ header{
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        /* width include padding  and margin */
-        box-sizing: border-box;
-        width: 100%;
-        /* always on the top layer*/
-        z-index: 1; 
-        flex-basis:100%;
     }
     .left-side{
         display: flex;
@@ -629,7 +550,6 @@ header{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:center;
-        /* border-bottom: 1px solid #DADCE0; */
     }
     
     .content-wrapper>figure, .content-wrapper>*{
@@ -674,27 +594,6 @@ header{
 
 /* desktop view 1024 */
 @media only screen and (min-width: 1024px){
-    /* .skip a{
-        left: 0;
-        padding: 7px;
-        -webkit-transition: top 1s ease-out;
-        transition: top 1s ease-out;
-        z-index: 1;
-        position: relative;
-        top: -50px;
-    
-    }
-        .skip a:focus{
-            position: relative;
-            top: 20px;
-          } */
-
-    /* body{
-        background-color: #e9eae9;
-        display: grid;
-        grid-template-columns: 1fr 2fr 2fr 2fr;
-        grid-template-rows: auto auto auto auto;
-    } */
     header{ 
         grid-area: 1 / 1 / 1 / 5; 
         width: 100%;
@@ -707,11 +606,6 @@ header{
     background-color:white;
     grid-area: 2 / 1 / 4 / 1; 
     }
-
-    /* main { grid-area: 3/ 2 / 4 / 5;}
-    footer { 
-    background-color: whitesmoke;
-    grid-area: 4 / 1 / 5 / 5;}    */
 
     /* figure + figcaption layout */
     .content-wrapper{
@@ -760,27 +654,10 @@ header{
         flex-basis:100%;
     }
     .left-side{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%; */
-
         /* remove  sticky */
         position: static;
         top:0px;
- 
     }
-
-    .right-side-img {
-        /* display: flex;
-        justify-content: center;
-        align-content: center;
-        margin-top: 10em;
-        margin-left: 0em; */
-        /* width: 100%; */
-    }
-
-
     /* nav end */
 
     /* content */
@@ -792,7 +669,6 @@ header{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 0.5em;
-        
     }
     /* last figure */
     .content-wrapper>#certification{
@@ -804,7 +680,6 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         margin: 0.5em;
-        
     }
 
     figure > *{
@@ -847,7 +722,7 @@ header{
     width: 40vw;
     height: 40vw;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px; 
   }
   
   /* This container is needed to position the front and back side */
@@ -867,8 +742,8 @@ header{
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner,
   .flip-card:focus-within .flip-card-inner,
-.flip-card:active .flip-card-inner,
-.flip-card:focus .flip-card-inner {
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
     transform: rotateY(180deg);
   }
   
@@ -880,13 +755,13 @@ header{
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
-  
+
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
   }
-  
+
   /* Style the back side */
   .flip-card-back {
     background-color: lightgoldenrodyellow;
@@ -895,7 +770,6 @@ header{
     transform: rotateY(180deg);
   }
 
-  /*  */
   #thumbnails img {
     height: 60px;
     width:auto;
